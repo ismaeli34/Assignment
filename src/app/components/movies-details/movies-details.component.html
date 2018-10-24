@@ -1,0 +1,64 @@
+
+
+    <mat-card class="example-card" *ngIf="movieId">
+
+      <img  src="https://image.tmdb.org/t/p/w500{{movieList.backdrop_path}}" width="838px" height="250px">
+
+      <mat-card-header style="margin-top: 15px">
+        <img mat-card-avatar  src="https://image.tmdb.org/t/p/w500{{movieList.poster_path}}" class="example-header-image">
+
+        <mat-card-title>{{movieList.title}}</mat-card-title>
+        <mat-card-subtitle>Released Date: {{movieList.release_date}} </mat-card-subtitle>
+        <mat-card-subtitle>Ratings: {{movieList.vote_average}} </mat-card-subtitle>
+        <mat-card-subtitle>Popularity: {{movieList.popularity}} </mat-card-subtitle>
+
+
+
+      </mat-card-header>
+      <mat-card-content>
+        <p>{{movieList.overview}}</p>
+      </mat-card-content>
+
+    </mat-card>
+
+
+
+    <!--Search Query-->
+
+
+<!--    <div class="row">
+
+
+
+      <div class="col-md-4" *ngFor="let movie of movies.results">
+
+        <mat-card class="small-card" >
+
+          <mat-card-header>
+            <img mat-card-avatar  src="https://image.tmdb.org/t/p/w500{{movie.poster_path}}" class="image-header">
+
+            <mat-card-title style="font-size: x-small ">{{movie.title}}  </mat-card-title>
+            <mat-card-subtitle style="font-size: x-small " >Language:  </mat-card-subtitle>
+
+            <mat-card-subtitle style="font-size: x-small ">Released Date: {{movie.release_date}}</mat-card-subtitle>
+            <mat-card-subtitle style="font-size: x-small ">Ratings : {{movie.vote_average}} </mat-card-subtitle>
+          </mat-card-header>
+
+        </mat-card>
+
+
+      </div>
+
+
+
+
+    </div>-->
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,58 @@
+<div class="container-fluid">
+<div class="search-box" >
+
+  <mat-card class="search-card">
+
+
+    <div class="row">
+
+      <div class="col-md-4">
+
+
+      </div>
+
+      <div class="col-md-4">
+
+
+
+        <form class="example-form">
+          <mat-form-field class="example-full-width">
+            <input type="text" placeholder="Search " aria-label="Number" matInput [formControl]="myControl" [matAutocomplete]="auto">
+            <mat-autocomplete #auto="matAutocomplete">
+              <mat-option *ngFor="let option of options" [value]="option">
+                {{option}}
+              </mat-option>
+            </mat-autocomplete>
+          </mat-form-field>
+        </form>
+
+       <!-- <form class="example-form">
+          <mat-form-field class="example-full-width">
+            <input matInput placeholder="Search" >
+          </mat-form-field>
+        </form>-->
+
+   <!--     <section class="filter-wrapper">
+          <div class="keyword-wrapper">
+            <input type="text" id="keyword" placeholder="Search for artists..." autofocus/>
+          </div>
+          <ul class="filter-select">
+            <li class="filter-select-list"><img src="" alt="" width="50" height="50"><p class="artist-name"></p>
+              <span class="tags"></span>
+          </ul>
+        </section>-->
+
+
+      </div>
+
+      <div class="col-md-4">
+        <button mat-raised-button color="primary" (click)="searchMovieName($event.target.value)"><i class="glyphicon glyphicon-search" aria-hidden="true"></i><span style="margin-;">Search</span></button>
+
+
+      </div>
+
+    </div>
+  </mat-card>
+
+</div>
+</div>

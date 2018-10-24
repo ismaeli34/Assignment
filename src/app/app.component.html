@@ -1,0 +1,43 @@
+<!--The content below is only a placeholder and can be replaced.-->
+
+
+  <div class="row">
+  <app-search (sendMovieName)="getSearchMovieName($event)" ></app-search>
+  </div>
+
+  <div class="row">
+
+    <div class="col-md-4">
+
+      <app-listing (selectMovieId)="getMovieId($event)"></app-listing>
+
+    </div>
+
+    <div class="col-md-8">
+
+      <app-movies-details [movieName] = "movieName"  [movieId]="id" ></app-movies-details>
+
+    </div>
+
+<!--    <mat-drawer-container class="example-container">
+      <mat-drawer mode="side" opened >
+
+      </mat-drawer>
+      <mat-drawer-content>
+
+
+
+      </mat-drawer-content>
+    </mat-drawer-container>-->
+
+  </div>
+
+
+
+
+
+
+
+
+
+<router-outlet></router-outlet>
